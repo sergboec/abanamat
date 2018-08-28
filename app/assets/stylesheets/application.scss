@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+
+@import url('https://fonts.googleapis.com/css?family=Istok+Web|Lora&subset=cyrillic');
+
+$family-sans-serif: 'Istok Web', sans-serif;
+$family-serif: 'Lora', serif;
+$family-primary: $family-serif;
+
+.title{
+	font-family: $family-sans-serif
+}
+
+@import "bulma";
+@import "font-awesome";

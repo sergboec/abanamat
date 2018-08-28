@@ -14,16 +14,10 @@
   overflow: hidden;
 }
 
-.font-header{
-  font-family: Montserrat !important;
-}
-
-.font-text{
-  font-family: Raleway !important; 
-}
-
-
-.main {
+.main-header-image {
+  height: unset;
+  width: unset;
+  max-width: unset;
 }
 
 .aside-1 {
@@ -40,9 +34,21 @@
   border-top: 1px solid black;
 }
 
+.margin-t-2{
+  margin-top: 2em;
+}
+
+.margin-t-3{
+  margin-top: 3em;
+}
+
+.margin-t-5{
+  margin-top: 5em;
+}
+
 @media all and (min-width: 600px) {
   .aside-1 { order: 1; }
-  .main    { order: 2; }
+  .main-header-image    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
 }

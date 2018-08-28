@@ -31,6 +31,10 @@ gem 'jbuilder', '~> 2.5'
 # Use postgres as the database for Active Record
 gem 'pg'
 
+#for style
+gem 'bulma-rails', '~> 0.7.1'
+gem "font-awesome-rails"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
