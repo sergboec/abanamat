@@ -22,4 +22,8 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: abanamat_production
+  username: abanamat
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
