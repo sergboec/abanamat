@@ -1,0 +1,46 @@
+// Place all the styles related to the Static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#header-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  align-items: flex-end;
+  min-height:500px;
+  background-repeat: repeat-x;
+  background-image: url('back_n.png');;
+  overflow: hidden;
+}
+
+
+.main {
+}
+
+.aside-1 {
+  flex: 1 auto;
+  background: white;
+  height: 149px;
+  border-top: 1px solid black;
+}
+
+.aside-2 {
+  flex: 1 auto;
+  background: white;
+  height: 149px;
+  border-top: 1px solid black;
+}
+
+@media all and (min-width: 600px) {
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+@media all and (max-width: 1620px){
+  [class*="aside-"] {
+        display:  none;
+  }
+}
