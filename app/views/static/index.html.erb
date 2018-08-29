@@ -1,127 +1,112 @@
 <div id="header-wrapper">
 
   <%= image_tag("dudes.png", :class => "main-header-image")  %>
-  <aside class="aside aside-1"></aside>
-  <aside class="aside aside-2"></aside>
+  <aside class="aside aside-header-1"></aside>
+  <aside class="aside aside-header-2"></aside>
 
 </div>
 
-<div class="is-hidden-desktop margin-t-2"></div>
+<div class="section">
 
-<div class="container ">
+  <div class="container ">
 
-  <div class="tile is-vertical is-ancestor">
-    
-    <div class="tile is-parent">
-      <div class="tile is-child is-horizontal has-text-centered">
-        <article class="title has-text-weight-bold is-size-1">Народный променад</article>
-        <article class="subtitle is-size-2-touch"><i>"Расти, моя корявая сосенка! Да не бывать тебе корабельною мачтой..."</i><br> © Невидимая Книга, 1976</article>
-        <article class="subtitle has-text-weight-bold is-size-6 is-size-3-touch">2 сентября, с 12:00. Улица Рубинштейна</article>
-      </div>
-      
-    </div>
+    <div class="tile is-vertical is-ancestor">
 
-    <div class="tile margin-t-2">
-      
-      <div class="tile is-parent is-vertical">
+      <div class="tile is-parent">
+        <div class="tile is-child is-horizontal has-text-centered">
+          <article class="title has-text-weight-bold is-size-1">Народный променад</article>
+          <article class="subtitle is-size-2-touch"><i>"Расти, моя корявая сосенка! Да не бывать тебе корабельною мачтой..."</i><br> © Невидимая Книга, 1976</article>
+          <article class="subtitle has-text-weight-bold is-size-6 is-size-3-touch">2 сентября, с 12:00. Улица Рубинштейна</article>
+        </div>
         
-        <article class="tile is-child">
-          <p class="title has-text-centered is-size-5 is-size-2-touch">Народный променад "Рубинштейна и окрестности"</p>
-          <p class="subtitle is-size-3-touch has-text-centered-touch">Разовое некоммерческое мероприятие к 77-летию Довлатова, скромная инициатива простых людей. Грянет залп с Нарышкина бастиона, и увидимся.До встречи на багряной прогулке!</p>
-        </article>
-
-        <div class="tile is-parent is-hidden-desktop margin-t-2"></div>
-        
-        <article class="tile is-child">
-          <p class="title has-text-centered is-size-5 is-size-2-touch">Для местных жителей:</p>
-          <p class="subtitle is-size-3-touch has-text-centered-touch">Вознамерившись исключить беспокойное присутствие и неудобь, сократили численность площадок (ограничимся лишь некоторыми).
-        Проведение уличных событий программы согласовано с Администрацией Центрального района Санкт-Петербурга (заяв. № 01-14-3457.18-0-1, выд. 21.08.2018).</p>
-        </article>
-
       </div>
-      
-      <div class="tile is-parent is-hidden-touch">
+
+      <div class="tile margin-t-2">
+
+        <div class="tile is-parent is-vertical">
+
+          <article class="tile is-child">
+            <p class="title has-text-centered is-size-5 is-size-2-touch">Народный променад "Рубинштейна и окрестности"</p>
+            <p class="subtitle is-size-3-touch has-text-centered-touch">Разовое некоммерческое мероприятие к 77-летию Довлатова, скромная инициатива простых людей. Грянет залп с Нарышкина бастиона, и увидимся.До встречи на багряной прогулке!</p>
+          </article>
+
+          <div class="tile is-parent is-hidden-desktop margin-t-2"></div>
+          
+          <article class="tile is-child">
+            <p class="title has-text-centered is-size-5 is-size-2-touch">Для местных жителей:</p>
+            <p class="subtitle is-size-3-touch has-text-centered-touch">Вознамерившись исключить беспокойное присутствие и неудобь, сократили численность площадок (ограничимся лишь некоторыми).
+            Проведение уличных событий программы согласовано с Администрацией Центрального района Санкт-Петербурга (заяв. № 01-14-3457.18-0-1, выд. 21.08.2018).</p>
+          </article>
+
+        </div>
+        
+        <div class="tile is-parent is-hidden-touch">
+          <article class="tile is-child">
+            <figure class="image">
+              <%= image_tag("sign.png", class:"ui large rounded image") %>
+            </figure>
+          </article>
+        </div>
+      </div>
+
+      <div class="tile is-parent is-hidden-desktop">
         <article class="tile is-child">
-          <figure class="image">
+          <figure class="image" style="max-width: 50%; margin: 0 auto;">
             <%= image_tag("sign.png", class:"ui large rounded image") %>
           </figure>
         </article>
       </div>
-    </div>
 
-    <div class="tile is-parent is-hidden-desktop">
-      <article class="tile is-child">
-        <figure class="image" style="max-width: 50%; margin: 0 auto;">
-          <%= image_tag("sign.png", class:"ui large rounded image") %>
-        </figure>
-      </article>
-    </div>
 
+    </div>
 
   </div>
 
 </div>
 
+<div class="section">
 
-<div class="container">
-  <div class="level margin-t-3">
+  <div class="columns is-centered">
+
+    <div class="column is-one-quarter is-half-touch has-text-centered">
+
+      <a class="button is-link is-medium is-large-touch" href="https://vk.com/pol_den_dovlatova">
+        <span class="icon is-medium">
+          <%= fa_icon "vk" %>
+        </span>
+        <span>Вконтакте</span>
+      </a>
+
+    </div>
+
+    <div class="column is-one-quarter is-half-touch has-text-centered">
+
+      <a class="button is-info is-medium is-large-touch">
+        <span class="icon is-medium">
+          <%= fa_icon "telegram" %>
+        </span>
+        <span>Telegram</span>
+      </a>
+
+    </div>
     
-    <div class="level-item has-text-centered is-hidden-touch">
-      <a class="button is-link is-medium" href="https://vk.com/pol_den_dovlatova">
-        <span class="icon is-medium">
-          <%= fa_icon "vk" %>
-        </span>
-        <span>Вконтакте</span>
-      </a>
-    </div>
-
-    <div class="level-item has-text-centered is-hidden-touch">
-      <a class="button is-info is-medium">
-        <span class="icon is-medium">
-          <%= fa_icon "telegram" %>
-        </span>
-        <span>Telegram</span>
-      </a>
-    </div>
-  
-
-  <div class="level-item has-text-centered is-hidden-desktop">
-      <a class="button is-link is-large" href="https://vk.com/pol_den_dovlatova">
-        <span class="icon is-medium">
-          <%= fa_icon "vk" %>
-        </span>
-        <span>Вконтакте</span>
-      </a>
-    </div>
-
-    <div class="level-item has-text-centered is-hidden-desktop">
-      <a class="button is-info is-large">
-        <span class="icon is-medium">
-          <%= fa_icon "telegram" %>
-        </span>
-        <span>Telegram</span>
-      </a>
-    </div>
   </div>
-</div>
-
 
 </div>
 
-<div class="margin-t-2"></div>
 
 <section class="hero is-medium is-light">
-  
+
   <div class="hero-head">
     <div class="container has-text-centered">
       <h1 class="title margin-t-2 is-size-1-touch">
-        Заявленные участники
+        Заявленные участники 
       </h1>
     </div>  
   </div>
   
   <div class="hero-body">
-    
+
     <div class="container">
       <h1 class="title is-size-2-touch">
         Ленинградский диксиленд
@@ -211,3 +196,313 @@
 
 </section>
 
+<!-- <section class="section skills has-text-centered">
+  <div class="container is-narrow">
+    <div class="box">
+      <div class="content">
+        <div class="columns is-centered">
+          <div class="column">
+            <figure class="image"><img class="is-skill-icon" src="img/icon-designer.svg"></figure>
+            <h1 class="title is-size-4 is-spaced">Designer</h1>
+            <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+            <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
+            <p>UX, UI, Web, Mobile, Apps, Logos</p>
+            <p class="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
+            <ul>
+              <li>Balsamiq Mockups</li>
+              <li>Figma</li>
+              <li>Invision</li>
+              <li>Marvel</li>
+              <li>Pen &amp; Paper</li>
+              <li>Sketch</li>
+              <li>Webflow</li>
+              <li>Zeplin</li>
+            </ul>
+          </div>
+          <div class="column">
+            <figure class="image"><img class="is-skill-icon" src="img/icon-frontend.svg"></figure>
+            <h1 class="title is-size-4 is-spaced">Front-end Developer</h1>
+            <p>I tend to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            <p class="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
+            <p>HTML, Pug, Slim, CSS, Sass, Less</p>
+            <p class="list-title has-text-primary has-text-weight-normal">Dev Tools:</p>
+            <ul>
+              <li>Atom</li>
+              <li>Bitbucket</li>
+              <li>Bootstrap</li>
+              <li>Bulma</li>
+              <li>Codekit</li>
+              <li>Codepen</li>
+              <li>Github</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
+            </ul>
+          </div>
+          <div class="column"> 
+            <figure class="image"><img class="is-skill-icon" src="img/icon-mentor.svg"></figure>
+            <h1 class="title is-size-4 is-spaced">Mentor</h1>
+            <p>I genuinely care about people, and love helping new designers work on their craft.</p>
+            <p class="list-title has-text-primary has-text-weight-normal">Where I teach:</p>
+            <p>Designlab’s UX Academy</p>
+            <p class="list-title has-text-primary has-text-weight-normal">Mentor Stats:</p>
+            <ul>
+              <li>3 years experience</li>
+              <li>26 short courses</li>
+              <li>27 bootcamps</li>
+              <li>100+ students</li>
+              <li>900+ mentor sessions</li>
+              <li>60+ group critiques</li>
+              <li>8,500+ comments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="section">
+  <div class="container">
+    <h2 class="title is-4">
+      <span class="shadow is-success"><strong>Open source</strong> contributions</span>
+    </h2>
+
+    
+
+
+
+
+    <div class="item columns">
+      <div class="column is-3">
+        <a class="item-title" href="https://bulma.io/" target="_blank">
+          Bulma
+        </a>
+      </div>
+
+      <div class="column is-2 has-text-grey-light">
+        My CSS framework based on Flexbox
+      </div>
+
+      <div class="column is-offset-1 is-4">
+        <a href="https://bulma.io/" target="_blank">
+          <img src="/images/projects/bulma.png" srcset="/images/projects/bulma.png 1x,
+          /images/projects/bulma@2x.png 2x,
+          /images/projects/bulma@3x.png 3x" alt="Bulma" width="158" height="40">
+
+        </a>
+      </div>
+
+      <div class="column is-1">
+        <div class="github-stars">
+          <iframe data-src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=bulma&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px" src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=bulma&amp;type=star&amp;count=true&amp;size=large"></iframe>
+        </div>
+
+      </div>
+    </div>
+    
+
+
+
+
+    <div class="item columns">
+      <div class="column is-3">
+        <a class="item-title" href="https://jgthms.com/web-design-in-4-minutes/" target="_blank">
+          Web Design in 4 minutes
+        </a>
+      </div>
+
+      <div class="column is-2 has-text-grey-light">
+        Innovative tutorial
+      </div>
+
+      <div class="column is-offset-1 is-4">
+        <a href="https://jgthms.com/web-design-in-4-minutes/" target="_blank">
+          <img src="/images/projects/web-design-in-4-minutes.png" srcset="/images/projects/web-design-in-4-minutes.png 1x,
+          /images/projects/web-design-in-4-minutes@2x.png 2x,
+          /images/projects/web-design-in-4-minutes@3x.png 3x" alt="Web Design in 4 minutes" width="288" height="56">
+
+        </a>
+      </div>
+
+      <div class="column is-1">
+        <div class="github-stars">
+          <iframe data-src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=web-design-in-4-minutes&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px" src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=web-design-in-4-minutes&amp;type=star&amp;count=true&amp;size=large"></iframe>
+        </div>
+
+      </div>
+    </div>
+    
+
+
+
+
+    <div class="item columns">
+      <div class="column is-3">
+        <a class="item-title" href="https://jgthms.com/javascript-in-14-minutes/" target="_blank">
+          JavaScript in 4 minutes
+        </a>
+      </div>
+
+      <div class="column is-2 has-text-grey-light">
+        Interactive tutorial
+      </div>
+
+      <div class="column is-offset-1 is-4">
+        <a href="https://jgthms.com/javascript-in-14-minutes/" target="_blank">
+          <img src="/images/projects/javascript-in-14-minutes.png" srcset="/images/projects/javascript-in-14-minutes.png 1x,
+          /images/projects/javascript-in-14-minutes@2x.png 2x,
+          /images/projects/javascript-in-14-minutes@3x.png 3x" alt="JavaScript in 4 minutes" width="318" height="52">
+
+        </a>
+      </div>
+
+      <div class="column is-1">
+        <div class="github-stars">
+          <iframe data-src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=javascript-in-14-minutes&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px" src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=javascript-in-14-minutes&amp;type=star&amp;count=true&amp;size=large"></iframe>
+        </div>
+
+      </div>
+    </div>
+    
+
+
+
+
+    <div class="item columns">
+      <div class="column is-3">
+        <a class="item-title" href="https://htmlreference.io/" target="_blank">
+          HTML Reference
+        </a>
+      </div>
+
+      <div class="column is-2 has-text-grey-light">
+        Guide to all HTML elements and attributes
+      </div>
+
+      <div class="column is-offset-1 is-4">
+        <a href="https://htmlreference.io/" target="_blank">
+          <img src="/images/projects/html-reference.png" srcset="/images/projects/html-reference.png 1x,
+          /images/projects/html-reference@2x.png 2x,
+          /images/projects/html-reference@3x.png 3x" alt="HTML Reference" width="272" height="48">
+
+        </a>
+      </div>
+
+      <div class="column is-1">
+        <div class="github-stars">
+          <iframe data-src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=html-reference&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px" src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=html-reference&amp;type=star&amp;count=true&amp;size=large"></iframe>
+        </div>
+
+      </div>
+    </div>
+    
+
+
+
+
+    <div class="item columns">
+      <div class="column is-3">
+        <a class="item-title" href="https://cssreference.io/" target="_blank">
+          CSS Reference
+        </a>
+      </div>
+
+      <div class="column is-2 has-text-grey-light">
+        Visual guide to all CSS properties
+      </div>
+
+      <div class="column is-offset-1 is-4">
+        <a href="https://cssreference.io/" target="_blank">
+          <img src="/images/projects/css-reference.png" srcset="/images/projects/css-reference.png 1x,
+          /images/projects/css-reference@2x.png 2x,
+          /images/projects/css-reference@3x.png 3x" alt="CSS Reference" width="248" height="48">
+
+        </a>
+      </div>
+
+      <div class="column is-1">
+        <div class="github-stars">
+          <iframe data-src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=css-reference&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px" src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=css-reference&amp;type=star&amp;count=true&amp;size=large"></iframe>
+        </div>
+
+      </div>
+    </div>
+    
+
+
+
+
+    <div class="item columns">
+      <div class="column is-3">
+        <a class="item-title" href="https://jgthms.com/minireset.css/" target="_blank">
+          minireset.css
+        </a>
+      </div>
+
+      <div class="column is-2 has-text-grey-light">
+        Tiny modern CSS reset
+      </div>
+
+      <div class="column is-offset-1 is-4">
+        <a href="https://jgthms.com/minireset.css/" target="_blank">
+          <img src="/images/projects/minireset.css.png" srcset="/images/projects/minireset.css.png 1x,
+          /images/projects/minireset.css@2x.png 2x,
+          /images/projects/minireset.css@3x.png 3x" alt="minireset.css" width="64" height="64">
+
+        </a>
+      </div>
+
+      <div class="column is-1">
+        <div class="github-stars">
+          <iframe data-src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=minireset.css&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px" src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=minireset.css&amp;type=star&amp;count=true&amp;size=large"></iframe>
+        </div>
+
+      </div>
+    </div>
+    
+
+
+
+
+    <div class="item columns">
+      <div class="column is-3">
+        <a class="item-title" href="https://jgthms.com/wysiwyg.css/" target="_blank">
+          wysiwyg.css
+        </a>
+      </div>
+
+      <div class="column is-2 has-text-grey-light">
+        Style your Markdown or WYSIWYG content
+      </div>
+
+      <div class="column is-offset-1 is-4">
+        <a href="https://jgthms.com/wysiwyg.css/" target="_blank">
+          <img src="/images/projects/wysiwyg.css.png" srcset="/images/projects/wysiwyg.css.png 1x,
+          /images/projects/wysiwyg.css@2x.png 2x,
+          /images/projects/wysiwyg.css@3x.png 3x" alt="wysiwyg.css" width="120" height="60">
+
+        </a>
+      </div>
+
+      <div class="column is-1">
+        <div class="github-stars">
+          <iframe data-src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=wysiwyg.css&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px" src="https://ghbtns.com/github-btn.html?user=jgthms&amp;repo=wysiwyg.css&amp;type=star&amp;count=true&amp;size=large"></iframe>
+        </div>
+
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+
+<section class="section is-storybuilder is-medium"> <div class="container"> <div class="columns is-centered"> <div class="column is-12 is-10-fullhd"> <div class="columns is-vcentered"> <div class="column is-6"> <div class="section-header"> <h2 class="title is-2 is-spaced"> Perpetual Story Machine </h2> <h3 class="subtitle is-5"> The benefits of free storytelling go far beyond “the moral of the story” - whenever you tell a story, you stimulate imagination and encourage creative thinking. </h3> <h3 class="subtitle is-5"> When you create the story as you go, you can steer the story and even become a character in a world you build together - that makes your family active participants of the narrative! </h3> <h3 class="subtitle is-5"> Reading helps build literacy skills, telling stories helps build those skills and put them into practice. </h3> <hr class="spacer is-2"> </div> </div> <div class="column is-6"> <div class="section-media"> <div class="storybuilder"> <div class="story-item"> <div class="story-body"> <div class="story-caption"> Once upon a time </div> <div class="story-subject"> Sheriff Cleese </div> </div> <div class="story-icon"> <img alt="Sheriff Cleese" src="/assets/images/storybuilder/bad-gnome-90728b11.png?1535120468"> </div> </div> <div class="story-item"> <div class="story-body"> <div class="story-caption"> Who is in trouble? </div> <div class="story-subject"> Rodney the Astronaut </div> </div> <div class="story-icon"> <img alt="Rodney the Astronaut" src="/assets/images/storybuilder/flying-trout-094f5adc.png?1535120468"> </div> </div> <div class="story-item"> <div class="story-body"> <div class="story-caption"> What caused the trouble? </div> <div class="story-subject"> Mysterious Bottle </div> </div> <div class="story-icon"> <img alt="Mysterious Bottle" src="/assets/images/storybuilder/orb-wand-fb37e474.png?1535120468"> </div> </div> <div class="story-item"> <div class="story-body"> <div class="story-caption"> What will help? </div> <div class="story-subject"> Invisibility Mask </div> </div> <div class="story-icon"> <img alt="Invisibility Mask" src="/assets/images/storybuilder/holy-oak-112e8e72.png?1535120468"> </div> </div> <div class="story-item"> <div class="story-body"> <div class="story-caption"> Trouble solved with? </div> <div class="story-subject"> Giraffe </div> </div> <div class="story-icon"> <img alt="Giraffe" src="/assets/images/storybuilder/brutal-helm-efc473f4.png?1535120468"> </div> </div> </div> </div> </div> </div> </div> </div> </div> </section> -->
+
+
+<div id="footer-wrapper">
+  <%= image_tag("dudes_futer_ok.png", :class => "main-footer-image")  %>
+  <aside class="aside aside-footer-1"></aside>
+  <aside class="aside aside-footer-2"></aside>
+</div>
